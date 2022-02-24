@@ -1,23 +1,20 @@
 ﻿using System;
 
-namespace EmployeeWageProblem
+namespace EmpWage
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage problome :");
+            
 
-            //EmployeeCheck.EmployeePresentOrNot();
+            EmpWageUC7 obj = new EmpWageUC7();
 
-            //CalculateEmployeeWage.CalculateWage();
-            //EmployeeSwitchCase.CheckEmployUsingSwitchCase();
-
-            //EmployeeWage.CalEmpWage();
-
-            //MonthlyEmployeeWage.MonthlyWage();
-            EmpHourPerMonth.EmpPerMonth();
-
+            
+            Console.WriteLine(obj.EMP_RATE_PER_HOUR);
+            Console.WriteLine(obj.IS_PAR_TIME);
+            Console.WriteLine(obj.IS_FULL_TIME);
+            obj.display();
         }
     }
 }
